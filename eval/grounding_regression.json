@@ -1,0 +1,270 @@
+{
+  "1": [
+    {
+      "removed": [],
+      "citations_kept": 4,
+      "citations_before": 4
+    },
+    {
+      "removed": [],
+      "citations_kept": 4,
+      "citations_before": 4
+    },
+    {
+      "removed": [],
+      "citations_kept": 4,
+      "citations_before": 4
+    }
+  ],
+  "2": [
+    {
+      "removed": [
+        {
+          "sentence": "Note that unused sick days and unused study days are separate and cannot be carried over.",
+          "reason": "rewritten to: Note that unused sick days are separate and cannot be carried over."
+        }
+      ],
+      "citations_kept": 4,
+      "citations_before": 4
+    },
+    {
+      "removed": [
+        {
+          "sentence": "Note that unused sick days and unused study days are separate and cannot be carried over.",
+          "reason": "rewritten to: Note that unused sick days cannot be carried over."
+        }
+      ],
+      "citations_kept": 4,
+      "citations_before": 4
+    },
+    {
+      "removed": [
+        {
+          "sentence": "Note that unused sick days and unused study days are separate and cannot be carried over.",
+          "reason": "rewritten to: Note that unused sick days cannot be carried over."
+        }
+      ],
+      "citations_kept": 4,
+      "citations_before": 4
+    }
+  ],
+  "3": [
+    {
+      "removed": [],
+      "citations_kept": 1,
+      "citations_before": 1
+    },
+    {
+      "removed": [],
+      "citations_kept": 1,
+      "citations_before": 1
+    },
+    {
+      "removed": [],
+      "citations_kept": 1,
+      "citations_before": 1
+    }
+  ],
+  "4": [
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    },
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    },
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    }
+  ],
+  "5": [
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    },
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    },
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    }
+  ],
+  "6": [
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    },
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    },
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    }
+  ],
+  "7": [
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    },
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    },
+    {
+      "removed": [],
+      "citations_kept": 3,
+      "citations_before": 3
+    }
+  ],
+  "8": [
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    },
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    },
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    }
+  ],
+  "9": [
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    },
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    },
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    }
+  ],
+  "10": [
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    },
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    },
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    }
+  ],
+  "11": [
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    },
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    },
+    {
+      "removed": [],
+      "citations_kept": 2,
+      "citations_before": 2
+    }
+  ],
+  "12": [
+    {
+      "removed": [],
+      "citations_kept": 4,
+      "citations_before": 4
+    },
+    {
+      "removed": [],
+      "citations_kept": 4,
+      "citations_before": 4
+    },
+    {
+      "removed": [],
+      "citations_kept": 4,
+      "citations_before": 4
+    }
+  ],
+  "v2a-Q5": [
+    {
+      "removed": [
+        {
+          "sentence": "International travel must be requested at least 21 days before departure, through the Travel Desk.",
+          "reason": "rewritten to: International travel must be requested at least 21 days before departure."
+        }
+      ],
+      "citations_kept": 2,
+      "citations_before": 3
+    },
+    {
+      "removed": [
+        {
+          "sentence": "International travel must be requested at least 21 days before departure, through the Travel Desk.",
+          "reason": "rewritten to: International travel must be requested at least 21 days before departure."
+        }
+      ],
+      "citations_kept": 2,
+      "citations_before": 3
+    },
+    {
+      "removed": [
+        {
+          "sentence": "International travel must be requested at least 21 days before departure, through the Travel Desk.",
+          "reason": "rewritten to: International travel must be requested at least 21 days before departure."
+        }
+      ],
+      "citations_kept": 2,
+      "citations_before": 3
+    }
+  ],
+  "v2a-e4": [
+    {
+      "removed": [],
+      "citations_kept": 1,
+      "citations_before": 1
+    },
+    {
+      "removed": [],
+      "citations_kept": 1,
+      "citations_before": 1
+    },
+    {
+      "removed": [],
+      "citations_kept": 1,
+      "citations_before": 1
+    }
+  ]
+}

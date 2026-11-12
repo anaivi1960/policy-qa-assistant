@@ -1,0 +1,238 @@
+INFO:     Started server process [28536]
+INFO:     Waiting for application startup.
+2026-11-12 21:52:25,818 INFO policy_qa: indexed 48 sections from .\data\policies
+2026-11-12 21:52:25,819 INFO policy_qa: sentence-level grounding check: on
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:61549 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61565 - "GET /health HTTP/1.1" 200 OK
+2026-11-12 21:52:30,696 INFO policy_qa: retrieved: 01_annual_leave_policy#3(0.86), 01_annual_leave_policy#2(0.81), 01_annual_leave_policy#6(0.70), 07_learning_and_development_policy#3(0.71), 01_annual_leave_policy#5(0.74), 01_annual_leave_policy#1(0.68)
+2026-11-12 21:52:36,093 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:52:39,290 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:52:39,306 INFO policy_qa: retrieved: 01_annual_leave_policy#5(0.88), 07_learning_and_development_policy#3(0.71), 02_sick_leave_policy#1(0.70), 01_annual_leave_policy#6(0.70), 07_learning_and_development_policy#1(0.63), 01_annual_leave_policy#4(0.70)
+2026-11-12 21:52:42,501 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:52:45,701 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:52:45,713 INFO policy_qa: retrieved: 02_sick_leave_policy#3(0.91), 02_sick_leave_policy#5(0.75), 02_sick_leave_policy#1(0.68), 02_sick_leave_policy#2(0.72), 02_sick_leave_policy#4(0.71), 08_parental_leave_policy#1(0.64)
+2026-11-12 21:52:48,451 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:52:51,467 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:52:51,479 INFO policy_qa: retrieved: 03_remote_and_hybrid_work_policy#1(0.60), 01_annual_leave_policy#5(0.61), 01_annual_leave_policy#4(0.58), 07_learning_and_development_policy#3(0.56), 04_business_travel_policy#2(0.58), 02_sick_leave_policy#1(0.55)
+2026-11-12 21:52:55,260 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:52:58,066 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:52:58,080 INFO policy_qa: retrieved: 04_business_travel_policy#2(0.78), 01_annual_leave_policy#4(0.64), 04_business_travel_policy#5(0.63), 04_business_travel_policy#4(0.61), 10_working_hours_and_overtime_policy#4(0.57), 03_remote_and_hybrid_work_policy#2(0.59)
+2026-11-12 21:53:00,671 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:53:03,301 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:03,321 INFO policy_qa: retrieved: 05_expense_reimbursement_policy#2(0.75), 04_business_travel_policy#6(0.63), 05_expense_reimbursement_policy#4(0.71), 05_expense_reimbursement_policy#1(0.61), 05_expense_reimbursement_policy#5(0.60), 05_expense_reimbursement_policy#3(0.61)
+2026-11-12 21:53:06,836 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:53:09,474 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:09,486 INFO policy_qa: retrieved: 06_it_equipment_and_security_policy#1(0.66), 06_it_equipment_and_security_policy#2(0.65), 03_remote_and_hybrid_work_policy#4(0.56), 01_annual_leave_policy#4(0.50), 01_annual_leave_policy#5(0.48), 08_parental_leave_policy#5(0.49)
+2026-11-12 21:53:12,595 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:53:15,489 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:15,498 INFO policy_qa: retrieved: 07_learning_and_development_policy#1(0.80), 07_learning_and_development_policy#3(0.61), 07_learning_and_development_policy#4(0.67), 07_learning_and_development_policy#2(0.65), 04_business_travel_policy#5(0.61), 05_expense_reimbursement_policy#3(0.60)
+2026-11-12 21:53:19,186 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:53:21,669 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:21,680 INFO policy_qa: retrieved: 08_parental_leave_policy#2(0.82), 08_parental_leave_policy#1(0.75), 08_parental_leave_policy#3(0.74), 08_parental_leave_policy#4(0.67), 01_annual_leave_policy#1(0.62), 01_annual_leave_policy#2(0.62)
+2026-11-12 21:53:24,621 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:53:27,096 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:27,110 INFO policy_qa: retrieved: 09_code_of_conduct_gifts_policy#2(0.68), 03_remote_and_hybrid_work_policy#3(0.55), 05_expense_reimbursement_policy#3(0.56), 09_code_of_conduct_gifts_policy#3(0.56), 07_learning_and_development_policy#4(0.57), 04_business_travel_policy#5(0.57)
+2026-11-12 21:53:30,894 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:53:33,976 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:33,993 INFO policy_qa: retrieved: 04_business_travel_policy#4(0.82), 04_business_travel_policy#5(0.73), 05_expense_reimbursement_policy#5(0.73), 03_remote_and_hybrid_work_policy#3(0.63), 05_expense_reimbursement_policy#3(0.64), 09_code_of_conduct_gifts_policy#2(0.63)
+2026-11-12 21:53:38,195 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:53:41,295 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:41,312 INFO policy_qa: retrieved: 07_learning_and_development_policy#4(0.80), 01_annual_leave_policy#6(0.68), 07_learning_and_development_policy#1(0.64), 01_annual_leave_policy#3(0.63), 01_annual_leave_policy#2(0.62), 01_annual_leave_policy#1(0.60)
+2026-11-12 21:53:45,160 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:53:48,560 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:48,573 INFO policy_qa: retrieved: 01_annual_leave_policy#6(0.65), 03_remote_and_hybrid_work_policy#3(0.61), 07_learning_and_development_policy#4(0.60), 05_expense_reimbursement_policy#1(0.55), 02_sick_leave_policy#5(0.54), 06_it_equipment_and_security_policy#1(0.52)
+2026-11-12 21:53:50,118 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:50,130 INFO policy_qa: retrieved: 03_remote_and_hybrid_work_policy#1(0.55), 04_business_travel_policy#1(0.52), 01_annual_leave_policy#4(0.52), 06_it_equipment_and_security_policy#1(0.52), 01_annual_leave_policy#5(0.52), 06_it_equipment_and_security_policy#4(0.52)
+2026-11-12 21:53:51,703 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:53:51,716 INFO policy_qa: retrieved: 02_sick_leave_policy#5(0.60), 08_parental_leave_policy#5(0.59), 07_learning_and_development_policy#4(0.57), 01_annual_leave_policy#6(0.59), 02_sick_leave_policy#4(0.56), 06_it_equipment_and_security_policy#1(0.56)
+2026-11-12 21:53:53,594 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61577 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58657 - "GET /health HTTP/1.1" 200 OK
+2026-11-12 21:53:58,006 INFO policy_qa: retrieved: 01_annual_leave_policy#3(0.86), 01_annual_leave_policy#2(0.81), 01_annual_leave_policy#6(0.70), 07_learning_and_development_policy#3(0.71), 01_annual_leave_policy#5(0.74), 01_annual_leave_policy#1(0.68)
+2026-11-12 21:54:01,871 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:54:05,807 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:54:05,821 INFO policy_qa: retrieved: 01_annual_leave_policy#5(0.88), 07_learning_and_development_policy#3(0.71), 02_sick_leave_policy#1(0.70), 01_annual_leave_policy#6(0.70), 07_learning_and_development_policy#1(0.63), 01_annual_leave_policy#4(0.70)
+2026-11-12 21:54:09,051 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:54:11,566 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:54:11,584 INFO policy_qa: retrieved: 02_sick_leave_policy#3(0.91), 02_sick_leave_policy#5(0.75), 02_sick_leave_policy#1(0.68), 02_sick_leave_policy#2(0.72), 02_sick_leave_policy#4(0.71), 08_parental_leave_policy#1(0.64)
+2026-11-12 21:54:14,484 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:54:17,156 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:54:17,167 INFO policy_qa: retrieved: 03_remote_and_hybrid_work_policy#1(0.60), 01_annual_leave_policy#5(0.61), 01_annual_leave_policy#4(0.58), 07_learning_and_development_policy#3(0.56), 04_business_travel_policy#2(0.58), 02_sick_leave_policy#1(0.55)
+2026-11-12 21:54:21,134 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:54:24,179 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:54:24,193 INFO policy_qa: retrieved: 04_business_travel_policy#2(0.78), 01_annual_leave_policy#4(0.64), 04_business_travel_policy#5(0.63), 04_business_travel_policy#4(0.61), 10_working_hours_and_overtime_policy#4(0.57), 03_remote_and_hybrid_work_policy#2(0.59)
+2026-11-12 21:54:27,029 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:54:30,074 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:54:30,087 INFO policy_qa: retrieved: 05_expense_reimbursement_policy#2(0.75), 04_business_travel_policy#6(0.63), 05_expense_reimbursement_policy#4(0.71), 05_expense_reimbursement_policy#1(0.61), 05_expense_reimbursement_policy#5(0.60), 05_expense_reimbursement_policy#3(0.61)
+2026-11-12 21:54:34,017 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:54:36,512 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:54:36,525 INFO policy_qa: retrieved: 06_it_equipment_and_security_policy#1(0.66), 06_it_equipment_and_security_policy#2(0.65), 03_remote_and_hybrid_work_policy#4(0.56), 01_annual_leave_policy#4(0.50), 01_annual_leave_policy#5(0.48), 08_parental_leave_policy#5(0.49)
+2026-11-12 21:54:39,519 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:54:42,164 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:54:42,174 INFO policy_qa: retrieved: 07_learning_and_development_policy#1(0.80), 07_learning_and_development_policy#3(0.61), 07_learning_and_development_policy#4(0.67), 07_learning_and_development_policy#2(0.65), 04_business_travel_policy#5(0.61), 05_expense_reimbursement_policy#3(0.60)
+2026-11-12 21:54:44,902 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:54:47,243 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:54:47,256 INFO policy_qa: retrieved: 08_parental_leave_policy#2(0.82), 08_parental_leave_policy#1(0.75), 08_parental_leave_policy#3(0.74), 08_parental_leave_policy#4(0.67), 01_annual_leave_policy#1(0.62), 01_annual_leave_policy#2(0.62)
+2026-11-12 21:54:50,293 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:54:52,741 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:54:52,753 INFO policy_qa: retrieved: 09_code_of_conduct_gifts_policy#2(0.68), 03_remote_and_hybrid_work_policy#3(0.55), 05_expense_reimbursement_policy#3(0.56), 09_code_of_conduct_gifts_policy#3(0.56), 07_learning_and_development_policy#4(0.57), 04_business_travel_policy#5(0.57)
+2026-11-12 21:54:56,531 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:55:00,137 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:00,152 INFO policy_qa: retrieved: 04_business_travel_policy#4(0.82), 04_business_travel_policy#5(0.73), 05_expense_reimbursement_policy#5(0.73), 03_remote_and_hybrid_work_policy#3(0.63), 05_expense_reimbursement_policy#3(0.64), 09_code_of_conduct_gifts_policy#2(0.63)
+2026-11-12 21:55:04,225 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:55:08,023 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:08,040 INFO policy_qa: retrieved: 07_learning_and_development_policy#4(0.80), 01_annual_leave_policy#6(0.68), 07_learning_and_development_policy#1(0.64), 01_annual_leave_policy#3(0.63), 01_annual_leave_policy#2(0.62), 01_annual_leave_policy#1(0.60)
+2026-11-12 21:55:11,828 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:55:14,911 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:14,921 INFO policy_qa: retrieved: 01_annual_leave_policy#6(0.65), 03_remote_and_hybrid_work_policy#3(0.61), 07_learning_and_development_policy#4(0.60), 05_expense_reimbursement_policy#1(0.55), 02_sick_leave_policy#5(0.54), 06_it_equipment_and_security_policy#1(0.52)
+2026-11-12 21:55:16,444 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:16,456 INFO policy_qa: retrieved: 03_remote_and_hybrid_work_policy#1(0.55), 04_business_travel_policy#1(0.52), 01_annual_leave_policy#4(0.52), 06_it_equipment_and_security_policy#1(0.52), 01_annual_leave_policy#5(0.52), 06_it_equipment_and_security_policy#4(0.52)
+2026-11-12 21:55:18,221 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:18,234 INFO policy_qa: retrieved: 02_sick_leave_policy#5(0.60), 08_parental_leave_policy#5(0.59), 07_learning_and_development_policy#4(0.57), 01_annual_leave_policy#6(0.59), 02_sick_leave_policy#4(0.56), 06_it_equipment_and_security_policy#1(0.56)
+2026-11-12 21:55:20,023 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:58669 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58926 - "GET /health HTTP/1.1" 200 OK
+2026-11-12 21:55:24,394 INFO policy_qa: retrieved: 01_annual_leave_policy#3(0.86), 01_annual_leave_policy#2(0.81), 01_annual_leave_policy#6(0.70), 07_learning_and_development_policy#3(0.71), 01_annual_leave_policy#5(0.74), 01_annual_leave_policy#1(0.68)
+2026-11-12 21:55:28,170 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:55:31,285 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:31,304 INFO policy_qa: retrieved: 01_annual_leave_policy#5(0.88), 07_learning_and_development_policy#3(0.71), 02_sick_leave_policy#1(0.70), 01_annual_leave_policy#6(0.70), 07_learning_and_development_policy#1(0.63), 01_annual_leave_policy#4(0.70)
+2026-11-12 21:55:34,490 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:55:37,453 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:37,466 INFO policy_qa: retrieved: 02_sick_leave_policy#3(0.91), 02_sick_leave_policy#5(0.75), 02_sick_leave_policy#1(0.68), 02_sick_leave_policy#2(0.72), 02_sick_leave_policy#4(0.71), 08_parental_leave_policy#1(0.64)
+2026-11-12 21:55:39,983 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:55:42,543 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:42,555 INFO policy_qa: retrieved: 03_remote_and_hybrid_work_policy#1(0.60), 01_annual_leave_policy#5(0.61), 01_annual_leave_policy#4(0.58), 07_learning_and_development_policy#3(0.56), 04_business_travel_policy#2(0.58), 02_sick_leave_policy#1(0.55)
+2026-11-12 21:55:46,067 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:55:48,757 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:48,768 INFO policy_qa: retrieved: 04_business_travel_policy#2(0.78), 01_annual_leave_policy#4(0.64), 04_business_travel_policy#5(0.63), 04_business_travel_policy#4(0.61), 10_working_hours_and_overtime_policy#4(0.57), 03_remote_and_hybrid_work_policy#2(0.59)
+2026-11-12 21:55:51,507 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:55:58,577 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:55:58,581 WARNING policy_qa: removed unsupported sentence 'International travel must be requested at least 21 days before departure, through the Travel Desk.' (The 21-day rule is supported by quote 0, but quote 2 only says flights and hotels are booked through the Travel Desk. It does not say travel requests are submitted there.)
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:55:58,592 INFO policy_qa: retrieved: 05_expense_reimbursement_policy#2(0.75), 04_business_travel_policy#6(0.63), 05_expense_reimbursement_policy#4(0.71), 05_expense_reimbursement_policy#1(0.61), 05_expense_reimbursement_policy#5(0.60), 05_expense_reimbursement_policy#3(0.61)
+2026-11-12 21:56:02,417 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:56:05,260 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:05,272 INFO policy_qa: retrieved: 06_it_equipment_and_security_policy#1(0.66), 06_it_equipment_and_security_policy#2(0.65), 03_remote_and_hybrid_work_policy#4(0.56), 01_annual_leave_policy#4(0.50), 01_annual_leave_policy#5(0.48), 08_parental_leave_policy#5(0.49)
+2026-11-12 21:56:08,460 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:56:11,027 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:11,039 INFO policy_qa: retrieved: 07_learning_and_development_policy#1(0.80), 07_learning_and_development_policy#3(0.61), 07_learning_and_development_policy#4(0.67), 07_learning_and_development_policy#2(0.65), 04_business_travel_policy#5(0.61), 05_expense_reimbursement_policy#3(0.60)
+2026-11-12 21:56:13,926 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:56:16,472 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:16,481 INFO policy_qa: retrieved: 08_parental_leave_policy#2(0.82), 08_parental_leave_policy#1(0.75), 08_parental_leave_policy#3(0.74), 08_parental_leave_policy#4(0.67), 01_annual_leave_policy#1(0.62), 01_annual_leave_policy#2(0.62)
+2026-11-12 21:56:19,347 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:56:21,906 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:21,913 INFO policy_qa: retrieved: 09_code_of_conduct_gifts_policy#2(0.68), 03_remote_and_hybrid_work_policy#3(0.55), 05_expense_reimbursement_policy#3(0.56), 09_code_of_conduct_gifts_policy#3(0.56), 07_learning_and_development_policy#4(0.57), 04_business_travel_policy#5(0.57)
+2026-11-12 21:56:25,566 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:56:28,456 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:28,465 INFO policy_qa: retrieved: 04_business_travel_policy#4(0.82), 04_business_travel_policy#5(0.73), 05_expense_reimbursement_policy#5(0.73), 03_remote_and_hybrid_work_policy#3(0.63), 05_expense_reimbursement_policy#3(0.64), 09_code_of_conduct_gifts_policy#2(0.63)
+2026-11-12 21:56:32,466 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:56:35,342 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:35,351 INFO policy_qa: retrieved: 07_learning_and_development_policy#4(0.80), 01_annual_leave_policy#6(0.68), 07_learning_and_development_policy#1(0.64), 01_annual_leave_policy#3(0.63), 01_annual_leave_policy#2(0.62), 01_annual_leave_policy#1(0.60)
+2026-11-12 21:56:39,820 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:56:42,817 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:42,826 INFO policy_qa: retrieved: 01_annual_leave_policy#6(0.65), 03_remote_and_hybrid_work_policy#3(0.61), 07_learning_and_development_policy#4(0.60), 05_expense_reimbursement_policy#1(0.55), 02_sick_leave_policy#5(0.54), 06_it_equipment_and_security_policy#1(0.52)
+2026-11-12 21:56:44,620 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:44,627 INFO policy_qa: retrieved: 03_remote_and_hybrid_work_policy#1(0.55), 04_business_travel_policy#1(0.52), 01_annual_leave_policy#4(0.52), 06_it_equipment_and_security_policy#1(0.52), 01_annual_leave_policy#5(0.52), 06_it_equipment_and_security_policy#4(0.52)
+2026-11-12 21:56:46,250 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:46,259 INFO policy_qa: retrieved: 02_sick_leave_policy#5(0.60), 08_parental_leave_policy#5(0.59), 07_learning_and_development_policy#4(0.57), 01_annual_leave_policy#6(0.59), 02_sick_leave_policy#4(0.56), 06_it_equipment_and_security_policy#1(0.56)
+2026-11-12 21:56:48,039 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60306 - "POST /ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53920 - "GET /health HTTP/1.1" 200 OK
+2026-11-12 21:56:53,029 INFO policy_qa: retrieved: 02_sick_leave_policy#1(0.73), 01_annual_leave_policy#5(0.80), 02_sick_leave_policy#4(0.69), 01_annual_leave_policy#6(0.63), 02_sick_leave_policy#3(0.65), 02_sick_leave_policy#2(0.65)
+2026-11-12 21:56:55,506 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:56:58,513 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:56:58,522 INFO policy_qa: retrieved: 04_business_travel_policy#5(0.73), 03_remote_and_hybrid_work_policy#2(0.62), 03_remote_and_hybrid_work_policy#1(0.61), 03_remote_and_hybrid_work_policy#3(0.59), 08_parental_leave_policy#5(0.57), 10_working_hours_and_overtime_policy#4(0.55)
+2026-11-12 21:57:02,546 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:57:05,105 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:05,114 INFO policy_qa: retrieved: 10_working_hours_and_overtime_policy#3(0.76), 10_working_hours_and_overtime_policy#1(0.69), 10_working_hours_and_overtime_policy#4(0.71), 10_working_hours_and_overtime_policy#2(0.62), 08_parental_leave_policy#5(0.57), 01_annual_leave_policy#3(0.56)
+2026-11-12 21:57:08,306 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:57:11,381 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:11,389 INFO policy_qa: retrieved: 05_expense_reimbursement_policy#5(0.65), 05_expense_reimbursement_policy#2(0.66), 04_business_travel_policy#6(0.64), 05_expense_reimbursement_policy#1(0.61), 05_expense_reimbursement_policy#3(0.58), 05_expense_reimbursement_policy#4(0.60)
+2026-11-12 21:57:13,870 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:57:16,482 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:57:16,490 WARNING policy_qa: removed unsupported sentence 'Gym costs count as personal entertainment under the Expense Reimbursement Policy, and personal entertainment is not reimbursable.' (The gym-as-personal-entertainment rule is supported, but the policy name 'Expense Reimbursement Policy' is not given in the quote.)
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:16,498 INFO policy_qa: retrieved: 01_annual_leave_policy#5(0.70), 01_annual_leave_policy#4(0.68), 07_learning_and_development_policy#3(0.68), 08_parental_leave_policy#5(0.69), 02_sick_leave_policy#4(0.68), 08_parental_leave_policy#2(0.68)
+2026-11-12 21:57:18,042 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:18,050 INFO policy_qa: retrieved: 04_business_travel_policy#3(0.60), 04_business_travel_policy#6(0.61), 04_business_travel_policy#5(0.66), 04_business_travel_policy#1(0.55), 04_business_travel_policy#4(0.57), 04_business_travel_policy#2(0.58)
+2026-11-12 21:57:19,882 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:19,888 INFO policy_qa: retrieved: 04_business_travel_policy#4(0.83), 04_business_travel_policy#5(0.70), 04_business_travel_policy#2(0.69), 01_annual_leave_policy#5(0.58), 05_expense_reimbursement_policy#5(0.63), 04_business_travel_policy#3(0.63)
+2026-11-12 21:57:22,101 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:57:25,238 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:25,246 INFO policy_qa: retrieved: 03_remote_and_hybrid_work_policy#2(0.63), 08_parental_leave_policy#5(0.63), 08_parental_leave_policy#2(0.58), 08_parental_leave_policy#4(0.58), 03_remote_and_hybrid_work_policy#1(0.61), 08_parental_leave_policy#3(0.57)
+2026-11-12 21:57:29,130 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:57:32,079 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:32,087 INFO policy_qa: retrieved: 09_code_of_conduct_gifts_policy#1(0.58), 09_code_of_conduct_gifts_policy#4(0.59), 09_code_of_conduct_gifts_policy#3(0.58), 03_remote_and_hybrid_work_policy#1(0.52), 09_code_of_conduct_gifts_policy#2(0.53), 04_business_travel_policy#3(0.55)
+2026-11-12 21:57:34,400 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:34,407 INFO policy_qa: retrieved: 08_parental_leave_policy#4(0.69), 01_annual_leave_policy#1(0.61), 02_sick_leave_policy#2(0.61), 04_business_travel_policy#2(0.56), 07_learning_and_development_policy#2(0.55), 04_business_travel_policy#1(0.54)
+2026-11-12 21:57:36,720 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:36,728 INFO policy_qa: retrieved: 01_annual_leave_policy#5(0.64), 04_business_travel_policy#2(0.68), 04_business_travel_policy#5(0.57), 01_annual_leave_policy#4(0.63), 01_annual_leave_policy#2(0.54), 08_parental_leave_policy#5(0.53)
+2026-11-12 21:57:40,578 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:57:43,551 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:43,559 INFO policy_qa: retrieved: 04_business_travel_policy#3(0.73), 04_business_travel_policy#2(0.64), 04_business_travel_policy#6(0.57), 04_business_travel_policy#1(0.62), 10_working_hours_and_overtime_policy#2(0.51), 10_working_hours_and_overtime_policy#4(0.53)
+2026-11-12 21:57:47,123 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:57:50,070 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:50,079 INFO policy_qa: retrieved: 01_annual_leave_policy#6(0.62), 07_learning_and_development_policy#1(0.60), 07_learning_and_development_policy#4(0.57), 03_remote_and_hybrid_work_policy#3(0.56), 01_annual_leave_policy#5(0.56), 01_annual_leave_policy#3(0.57)
+2026-11-12 21:57:52,160 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:52,168 INFO policy_qa: retrieved: 01_annual_leave_policy#6(0.57), 07_learning_and_development_policy#4(0.56), 03_remote_and_hybrid_work_policy#3(0.49), 05_expense_reimbursement_policy#4(0.47), 03_remote_and_hybrid_work_policy#1(0.46), 08_parental_leave_policy#2(0.41)
+2026-11-12 21:57:54,268 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK
+2026-11-12 21:57:54,275 INFO policy_qa: retrieved: 03_remote_and_hybrid_work_policy#3(0.68), 04_business_travel_policy#5(0.63), 03_remote_and_hybrid_work_policy#2(0.57), 10_working_hours_and_overtime_policy#1(0.56), 08_parental_leave_policy#2(0.58), 01_annual_leave_policy#4(0.56)
+2026-11-12 21:57:57,475 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-11-12 21:57:59,984 INFO httpx2: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:53933 - "POST /ask HTTP/1.1" 200 OK

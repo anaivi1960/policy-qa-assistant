@@ -1,0 +1,18 @@
+{
+  "_comment": "Manual review of the final run. Each entry applies ONLY if the service returns exactly 'reviewed_answer' again; a new answer is left unreviewed and flagged in notes.",
+  "3": {
+    "outcome": "correct",
+    "notes": "Correct. Minor: the second sentence (no certificate needed for 2 days or fewer) is an inference from 'more than 2 consecutive working days', not stated verbatim in the policy.",
+    "reviewed_answer": "You need a medical certificate from a registered medical practitioner if you are absent for more than 2 consecutive working days. For absences of 2 consecutive working days or fewer, the policy does not require one."
+  },
+  "11": {
+    "outcome": "correct",
+    "notes": "Correct. Notes: (a) retrieval weak spot - the approvals section (05#3) ranked only 5th of 6 retrieved chunks; with TOP_K below 5 this question would lose its second document. (b) A sharper answer would also mention that hotels are normally booked via the Travel Desk (04#2), so a self-paid hotel is the exception (04#6); the answer is correct given the question's premise.",
+    "reviewed_answer": "Yes. NGN 70,000 per night is within the NGN 80,000 per night maximum for domestic hotels. Because NGN 70,000 is above NGN 50,000, your claim needs approval from both your line manager and Finance."
+  },
+  "2": {
+    "outcome": "partially_correct",
+    "notes": "Core answer correct and cited (5 days, use by 31 March, 01#5). But the model added an unrequested 'related' fact - 'unused study days ... cannot be carried over' - which no policy states (07#1 says unused learning BUDGET does not carry over; 07#3 says nothing about carrying over study days). It is uncited, so it breaks the rule that every fact must be cited. Cause: over-helpful elaboration; the quote check verifies quotes, not every answer sentence. Intermittent: runs 1-3 answered Q2 without this sentence; it appeared only in this final run.",
+    "reviewed_answer": "You can carry over up to 5 unused annual leave days into the next calendar year, and you must use them by 31 March or they are lost. Any days above the 5-day limit are lost at the end of the year unless the Head of People approves an exception in writing. Note that unused sick days and unused study days are separate and cannot be carried over."
+  }
+}

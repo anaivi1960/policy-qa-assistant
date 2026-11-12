@@ -7,6 +7,7 @@ import os
 from dataclasses import dataclass, field
 
 from .generator import Generator
+from .grounding import Judge, ground
 from .ingest import Chunk
 from .quotes import locate_quote
 from .retrieval import Hit
@@ -67,10 +68,11 @@ def verify_citations(raw: list[dict], chunks: list[Chunk]) -> tuple[list[dict], 
 
 
 class PolicyQA:
-    def __init__(self, retriever, generator: Generator, chunks: list[Chunk]):
+    def __init__(self, retriever, generator: Generator, chunks: list[Chunk], judge: Judge | None = None):
         self.retriever = retriever
         self.generator = generator
         self.chunks = chunks
+        self.judge = judge  # None disables the sentence-level grounding check (v1 behaviour)
 
     def ask(self, question: str) -> Answer:
         hits: list[Hit] = self.retriever.search(question, k=TOP_K)
@@ -87,4 +89,13 @@ class PolicyQA:
             # An answer we cannot back with a verbatim quote is treated as unsupported.
             log.warning("no verifiable citation left; returning a refusal instead")
             return Answer(question, False, REFUSAL_TEXT, [])
-        return Answer(question, True, result.get("answer", "").strip(), valid)
+
+        answer = result.get("answer", "").strip()
+        if self.judge is not None:
+            answer, valid, removed = ground(question, answer, valid, self.judge)
+            for r in removed:
+                log.warning("removed unsupported sentence %r (%s)", r["sentence"], r["reason"])
+            if not answer:
+                log.warning("no supported sentence left; returning a refusal instead")
+                return Answer(question, False, REFUSAL_TEXT, [])
+        return Answer(question, True, answer, valid)

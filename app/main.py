@@ -18,6 +18,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 load_dotenv()
 
 from .generator import ClaudeGenerator, GenerationError  # noqa: E402
+from .grounding import ClaudeJudge  # noqa: E402
 from .ingest import load_corpus  # noqa: E402
 from .qa import PolicyQA  # noqa: E402
 from .retrieval import HybridRetriever  # noqa: E402
@@ -45,7 +46,9 @@ def build_qa(generator=None) -> PolicyQA:
     chunks, _ = load_corpus(POLICY_DIR)
     retriever = HybridRetriever(chunks, cache_dir=CACHE_DIR)
     log.info("indexed %d sections from %s", len(chunks), POLICY_DIR)
-    return PolicyQA(retriever, generator or ClaudeGenerator(), chunks)
+    grounding = os.getenv("GROUNDING", "on").lower() not in ("off", "0", "false")
+    log.info("sentence-level grounding check: %s", "on" if grounding else "off")
+    return PolicyQA(retriever, generator or ClaudeGenerator(), chunks, ClaudeJudge() if grounding else None)
 
 
 @asynccontextmanager

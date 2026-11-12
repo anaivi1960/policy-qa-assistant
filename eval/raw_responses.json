@@ -2,7 +2,7 @@
   "1": {
     "question": "How many days of annual leave do I get after my probation ends?",
     "answered": true,
-    "answer": "After completing probation, full-time employees receive 20 working days of paid annual leave per calendar year. If you have more than 5 years of continuous service, this rises to 25 working days, and part-time employees receive leave in proportion to their contracted hours. Public holidays are in addition to this leave.",
+    "answer": "After completing probation, full-time employees receive 20 working days of paid annual leave per calendar year, rising to 25 working days once you have more than 5 years of continuous service. If you are part-time, your leave is in proportion to your contracted hours. Public holidays are in addition to this leave.",
     "citations": [
       {
         "doc_id": "01_annual_leave_policy",
@@ -25,14 +25,14 @@
         "quote": "Public holidays are in addition to annual leave."
       }
     ],
-    "seconds": 6.3,
+    "seconds": 9.5,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "2": {
     "question": "How many unused leave days can I carry over into next year, and when do I have to use them?",
     "answered": true,
-    "answer": "You can carry over up to 5 unused annual leave days into the next calendar year, and you must use them by 31 March or they are lost. Any days above the 5-day limit are lost at the end of the year unless the Head of People approves an exception in writing. Note that unused sick days and unused study days are separate and cannot be carried over.",
+    "answer": "You can carry over up to 5 unused annual leave days into the next calendar year, and you must use them by 31 March or they are lost. Any days above the 5-day limit are lost at the end of the year unless the Head of People approves an exception in writing.",
     "citations": [
       {
         "doc_id": "01_annual_leave_policy",
@@ -48,21 +48,16 @@
         "doc_id": "01_annual_leave_policy",
         "section": "5",
         "quote": "Days above the 5-day limit are lost at the end of the year unless the Head of People approves an exception in writing."
-      },
-      {
-        "doc_id": "02_sick_leave_policy",
-        "section": "1",
-        "quote": "Unused sick days cannot be carried over or paid out."
       }
     ],
-    "seconds": 3.8,
+    "seconds": 5.8,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "3": {
     "question": "When do I need a medical certificate for sick leave?",
     "answered": true,
-    "answer": "You need a medical certificate from a registered medical practitioner if you are absent for more than 2 consecutive working days. For absences of 2 consecutive working days or fewer, the policy does not require one.",
+    "answer": "You need a medical certificate from a registered medical practitioner if your sick absence lasts more than 2 consecutive working days.",
     "citations": [
       {
         "doc_id": "02_sick_leave_policy",
@@ -70,14 +65,14 @@
         "quote": "A medical certificate from a registered medical practitioner is required for any absence of **more than 2 consecutive working days**."
       }
     ],
-    "seconds": 3.2,
+    "seconds": 4.6,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "4": {
     "question": "Which days am I expected to be in the office?",
     "answered": true,
-    "answer": "If you are in a hybrid role, you are expected in the Lagos office on Tuesday and Thursday, which are the anchor days. Hybrid staff must work from the office at least 2 days per week. Your other days may be worked from home if your line manager agrees.",
+    "answer": "If you're in a hybrid role, you're expected in the Lagos office on Tuesday and Thursday, which are anchor days. Overall, hybrid employees work from the office at least 2 days per week. Other days may be worked from home if your line manager agrees.",
     "citations": [
       {
         "doc_id": "03_remote_and_hybrid_work_policy",
@@ -95,14 +90,14 @@
         "quote": "Other days may be worked from home with the line manager's agreement."
       }
     ],
-    "seconds": 3.7,
+    "seconds": 6.5,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "5": {
     "question": "How far in advance do I need to request an international trip?",
     "answered": true,
-    "answer": "International travel must be requested at least 21 days before departure, and bookings go through the Travel Desk. If you request later than that, your request may be refused or may need Director approval.",
+    "answer": "International travel must be requested at least 21 days before departure. If you request later than that, the request may be refused or may need Director approval.",
     "citations": [
       {
         "doc_id": "04_business_travel_policy",
@@ -113,26 +108,21 @@
         "doc_id": "04_business_travel_policy",
         "section": "2",
         "quote": "Late requests may be refused or may need Director approval."
-      },
-      {
-        "doc_id": "04_business_travel_policy",
-        "section": "2",
-        "quote": "All flights and hotels are booked through the Travel Desk (travel@kestrelnova.example)."
       }
     ],
-    "seconds": 2.7,
+    "seconds": 10.5,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "6": {
     "question": "What is the deadline for submitting an expense claim?",
     "answered": true,
-    "answer": "You must submit expense claims in the Spendly expense tool within 30 days of the expense. If you also want to be paid sooner, approved claims submitted before the 20th of the month are paid with that month's payroll. Claims submitted on or after the 20th are paid in the following month's payroll.",
+    "answer": "You must submit expense claims in the Spendly expense tool within 30 days of the expense. Also note that approved claims submitted before the 20th of the month are paid with that month's payroll, while claims submitted on or after the 20th are paid in the following month's payroll.",
     "citations": [
       {
         "doc_id": "05_expense_reimbursement_policy",
         "section": "2",
-        "quote": "Submit claims in the Spendly expense tool within **30 days** of the expense."
+        "quote": "- Submit claims in the Spendly expense tool within **30 days** of the expense."
       },
       {
         "doc_id": "05_expense_reimbursement_policy",
@@ -145,14 +135,14 @@
         "quote": "Claims submitted on or after the 20th are paid in the following month's payroll."
       }
     ],
-    "seconds": 3.8,
+    "seconds": 6.5,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "7": {
     "question": "I lost my work laptop. What should I do?",
     "answered": true,
-    "answer": "Report the lost laptop to IT Support at it-support@kestrelnova.example within 24 hours; IT will then remotely lock and wipe the device. If the laptop was stolen rather than lost, you must also report the theft to the police and share the report reference with IT.",
+    "answer": "Report the lost laptop to IT Support (it-support@kestrelnova.example) within 24 hours; IT will remotely lock and wipe the device. If the laptop was stolen rather than lost, you must also report the theft to the police and share the report reference with IT.",
     "citations": [
       {
         "doc_id": "06_it_equipment_and_security_policy",
@@ -170,14 +160,14 @@
         "quote": "Theft must also be reported to the police, and the report reference shared with IT."
       }
     ],
-    "seconds": 3.5,
+    "seconds": 6.0,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "8": {
     "question": "What is my yearly budget for training and courses?",
     "answered": true,
-    "answer": "Each permanent employee has a learning budget of NGN 400,000 per calendar year, which can be used for courses, certifications, conferences and books. Any unused budget does not carry over to the next year.",
+    "answer": "As a permanent employee, you have a learning budget of NGN 400,000 per calendar year, which covers courses, certifications, conferences and books. Any unused budget does not carry over to the next year.",
     "citations": [
       {
         "doc_id": "07_learning_and_development_policy",
@@ -190,7 +180,7 @@
         "quote": "Unused budget does not carry over."
       }
     ],
-    "seconds": 3.0,
+    "seconds": 6.9,
     "auto_outcome": "correct",
     "auto_notes": []
   },
@@ -210,19 +200,24 @@
         "quote": "It must be taken within **3 months** of the child's birth or adoption and may be taken in up to two blocks."
       }
     ],
-    "seconds": 2.9,
+    "seconds": 5.3,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "10": {
     "question": "A supplier sent me a gift worth NGN 25,000. Can I keep it?",
     "answered": true,
-    "answer": "Not automatically. NGN 25,000 is above the NGN 15,000 limit, so you must declare the gift to Compliance (compliance@kestrelnova.example) within 5 working days. Compliance will decide whether you may keep it, or whether it must be returned or donated. If the gift is cash, a voucher or a gift card, you must never accept it, whatever the value.",
+    "answer": "Not automatically. NGN 25,000 is above the NGN 15,000 limit, so you must declare the gift to Compliance (compliance@kestrelnova.example) within 5 working days. Compliance will then decide whether you may keep it, return it or donate it. If the gift is cash, a voucher or a gift card, you must not accept it at all, whatever its value.",
     "citations": [
       {
         "doc_id": "09_code_of_conduct_gifts_policy",
         "section": "2",
-        "quote": "Gifts above NGN 15,000 must be **declared to Compliance within 5 working days** (compliance@kestrelnova.example). Compliance decides whether the gift may be kept, returned or donated."
+        "quote": "Gifts above NGN 15,000 must be **declared to Compliance within 5 working days** (compliance@kestrelnova.example)."
+      },
+      {
+        "doc_id": "09_code_of_conduct_gifts_policy",
+        "section": "2",
+        "quote": "Compliance decides whether the gift may be kept, returned or donated."
       },
       {
         "doc_id": "09_code_of_conduct_gifts_policy",
@@ -230,14 +225,14 @@
         "quote": "Cash, vouchers and gift cards must never be accepted, whatever the value."
       }
     ],
-    "seconds": 3.2,
+    "seconds": 6.5,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "11": {
     "question": "I stayed in a hotel costing NGN 70,000 per night on a domestic work trip. Is that within the limit, and who needs to approve my claim?",
     "answered": true,
-    "answer": "Yes. NGN 70,000 per night is within the NGN 80,000 per night maximum for domestic hotels. Because NGN 70,000 is above NGN 50,000, your claim needs approval from both your line manager and Finance.",
+    "answer": "Yes. NGN 70,000 per night is within the domestic hotel limit of NGN 80,000 per night. Because the amount is above NGN 50,000, your claim needs approval from both your line manager and Finance.",
     "citations": [
       {
         "doc_id": "04_business_travel_policy",
@@ -250,14 +245,14 @@
         "quote": "- Items **above NGN 50,000**: line manager **and** Finance approval."
       }
     ],
-    "seconds": 4.2,
+    "seconds": 7.2,
     "auto_outcome": "correct",
     "auto_notes": []
   },
   "12": {
     "question": "The company paid NGN 300,000 for my certification. If I resign 8 months after finishing it, what do I owe, and what happens to my unused annual leave?",
     "answered": true,
-    "answer": "Your NGN 300,000 certification costs more than the NGN 200,000 threshold, and you would be resigning within 12 months of completing it. You would therefore owe 50% of the cost, which is NGN 150,000, deducted from your final salary where possible. Any accrued but unused annual leave for the current year is paid out at your basic daily rate in your final salary. If you have taken more leave than you accrued, the excess is deducted from your final salary.",
+    "answer": "Your certification cost NGN 300,000, which is more than the NGN 200,000 threshold. You would be resigning within 12 months of completing it, so you must repay 50% of the cost: NGN 150,000. This will be deducted from your final salary where possible. Any accrued but unused annual leave for the current year will be paid out at your basic daily rate in your final salary. However, if you have taken more leave than you accrued, the excess will be deducted from your final salary.",
     "citations": [
       {
         "doc_id": "07_learning_and_development_policy",
@@ -280,7 +275,7 @@
         "quote": "Leave taken in excess of the accrued amount is deducted from the final salary."
       }
     ],
-    "seconds": 4.4,
+    "seconds": 6.9,
     "auto_outcome": "correct",
     "auto_notes": []
   },
@@ -289,7 +284,7 @@
     "answered": false,
     "answer": "The policy documents do not contain information about this.",
     "citations": [],
-    "seconds": 1.8,
+    "seconds": 1.6,
     "auto_outcome": "correct_refusal",
     "auto_notes": []
   },
@@ -307,7 +302,7 @@
     "answered": false,
     "answer": "The policy documents do not contain information about this.",
     "citations": [],
-    "seconds": 2.0,
+    "seconds": 1.4,
     "auto_outcome": "correct_refusal",
     "auto_notes": []
   }

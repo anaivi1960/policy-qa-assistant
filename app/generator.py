@@ -74,8 +74,8 @@ def format_context(hits: list[Hit]) -> str:
 
 class ClaudeGenerator:
     def __init__(self) -> None:
-        # Each /ask must finish within 60 s: cap a single attempt at 25 s, one retry.
-        self.client = anthropic.Anthropic(timeout=25.0, max_retries=1)
+        # Each /ask must finish within 60 s: generation 2 x 17 s worst case + grounding 2 x 12 s.
+        self.client = anthropic.Anthropic(timeout=17.0, max_retries=1)
 
     def generate(self, question: str, hits: list[Hit]) -> dict:
         user = (
