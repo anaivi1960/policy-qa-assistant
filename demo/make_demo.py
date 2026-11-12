@@ -43,7 +43,7 @@ ASK = 'curl -s -X POST http://localhost:8000/ask -H "Content-Type: application/j
 
 SCENES = [
     ("Check the service is up: GET /health", "curl -s http://localhost:8000/health"),
-    ("Ask a question (README example). The answer cites the document, section and an exact quote.",
+    ("Ask a question (README example). Each quote is verified word for word, and each sentence is checked against the quotes.",
      ASK % "How much paternity leave do I get?"),
     ("A question that needs two policies: travel (hotel limit) and expenses (who approves).",
      ASK % "I stayed in a hotel costing NGN 70,000 per night on a domestic work trip. Is that within the limit, and who needs to approve my claim?"),
@@ -63,6 +63,7 @@ class Frame:
     lines: list[tuple[str, tuple]] = field(default_factory=list)  # (text, colour)
     caption: str = ""
     title: list[str] | None = None
+    offset: int | None = None  # first visible line; None = follow the bottom like a terminal
 
 
 def wrap(text: str, colour) -> list[tuple[str, tuple]]:
@@ -90,7 +91,8 @@ def render(f: Frame) -> bytes:
         for i, c in enumerate([(255, 95, 86), (255, 189, 46), (39, 201, 63)]):
             d.ellipse([16 + i * 22, 11, 28 + i * 22, 23], fill=c)
         d.text((W / 2 - 110, 8), "Terminal - policy-qa-assistant", font=MONO, fill=DIM)
-        for i, (t, colour) in enumerate(f.lines[-MAX_LINES:]):
+        visible = f.lines[-MAX_LINES:] if f.offset is None else f.lines[f.offset:f.offset + MAX_LINES]
+        for i, (t, colour) in enumerate(visible):
             d.text((LEFT, TOP + i * LINE_H), t, font=MONO, fill=colour)
     if f.caption:
         lines = textwrap.wrap(f.caption, 80)
@@ -171,7 +173,7 @@ def main() -> None:
         server.terminate()
 
     v = Video(OUT / "demo.mp4")
-    v.hold(Frame(title=["Company Policy Q&A Assistant", "RAG with verified citations - FastAPI + Claude Opus 5.5",
+    v.hold(Frame(title=["Company Policy Q&A Assistant", "RAG with verified citations and sentence-level grounding - FastAPI + Claude Opus 5.5",
                         "Live recording: every response below is real service output"],
                  caption="Demo: start the service, then ask questions from the terminal."), 5)
 
@@ -181,7 +183,7 @@ def main() -> None:
     for line in log:
         f.lines += wrap(line, DIM)
         v.hold(f, 0.35)
-    f.caption = "Startup: the 10 policies are split into 48 sections and indexed (embeddings + BM25)."
+    f.caption = "Startup: 10 policies split into 48 sections and indexed (embeddings + BM25); grounding check on."
     v.hold(f, 5)
 
     for caption, cmd, out, secs in results:
@@ -189,12 +191,24 @@ def main() -> None:
         v.hold(f, 1)
         v.type_command(f, cmd)
         f.lines += wrap(out, GREEN if '"answered": true' in out else BLUE)
-        v.hold(f, read_seconds(out) + 1.5)
+        overflow = len(f.lines) - MAX_LINES
+        if overflow <= 0:
+            v.hold(f, read_seconds(out) + 1.5)
+        else:
+            # Too long for one screen: show the top (command, question, answer) first,
+            # then scroll down slowly to the citations, like a reader would.
+            f.offset = 0
+            v.hold(f, read_seconds(out) * 0.6)
+            for off in range(1, overflow + 1):
+                f.offset = off
+                v.hold(f, 0.15)
+            v.hold(f, read_seconds(out) * 0.4 + 1.5)
 
     v.hold(Frame(title=["Results on the 15 test questions",
-                        "11 correct answers  |  3 correct refusals  |  1 failure (Q2, partially correct)",
+                        "Final version: 12 correct answers  |  3 correct refusals  |  0 failures",
+                        "Earlier versions: v1 had 1 partially correct (Q2), v2a had 1 incorrect (Q5)",
                         "Details: README.md, results.csv, WRITEUP.md"],
-                 caption="Failures are reported honestly in results.csv and WRITEUP.md."), 6)
+                 caption="All three versions and their failures are reported in README.md and WRITEUP.md."), 6)
     v.close()
 
     (OUT / "demo.srt").write_text(
