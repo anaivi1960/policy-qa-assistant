@@ -6,8 +6,8 @@ Grading has two layers:
 1. Automatic check against eval/answer_key.json (written from the policy text before any run):
    refusal vs answer, required facts present, required doc#section cited, and every quote
    re-verified word for word against the source file (the same check the graders run).
-2. Manual review: eval/review.json may override `outcome` and `notes` per question id.
-   This is where human judgement goes; the auto-grade is only a first pass.
+2. Manual review: eval/review.json overrides `outcome` and `notes` per question id, but only
+   when the answer is identical to the one that was reviewed (answers vary between runs).
 """
 
 from __future__ import annotations
@@ -92,8 +92,12 @@ def main() -> None:
             raw[q["id"]] = {**resp, "seconds": round(elapsed, 1), "auto_outcome": outcome, "auto_notes": notes}
 
             override = review.get(q["id"], {})
-            outcome = override.get("outcome", outcome)
-            note_text = override.get("notes", "; ".join(notes))
+            note_text = "; ".join(notes)
+            if override and override.get("reviewed_answer") == resp.get("answer"):
+                outcome, note_text = override["outcome"], override["notes"]
+            elif override:
+                note_text = ("AUTO-GRADED ONLY: answer differs from the manually reviewed one; "
+                             "re-review needed. " + note_text).strip()
             rows.append({
                 "id": q["id"],
                 "question": q["question"],

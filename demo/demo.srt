@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:05,000
+Demo: start the service, then ask questions from the terminal.
+
+2
+00:00:05,000 --> 00:00:09,133
+Start the service with one command. It listens on port 8000 (set PORT to change it).
+
+3
+00:00:09,133 --> 00:00:14,133
+Startup: the 10 policies are split into 48 sections and indexed (embeddings + BM25).
+
+4
+00:00:14,133 --> 00:00:26,667
+Check the service is up: GET /health
+
+5
+00:00:26,667 --> 00:00:55,133
+Ask a question (README example). The answer cites the document, section and an exact quote.
+
+6
+00:00:55,133 --> 00:01:23,600
+A question that needs two policies: travel (hotel limit) and expenses (who approves).
+
+7
+00:01:23,600 --> 00:01:52,600
+Applying a rule to a situation: the gift is above the NGN 15,000 limit, so it must be declared.
+
+8
+00:01:52,600 --> 00:02:20,667
+Two policies again: training repayment (learning policy) and leave payout (annual leave policy).
+
+9
+00:02:20,667 --> 00:02:35,533
+Not covered by any policy: the assistant refuses instead of guessing, with no citations.
+
+10
+00:02:35,533 --> 00:02:49,867
+Invalid input (empty question) returns HTTP 422 with an error body, not a fake refusal.
+
+11
+00:02:49,867 --> 00:02:55,867
+Failures are reported honestly in results.csv and WRITEUP.md.
