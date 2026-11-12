@@ -1,0 +1,18 @@
+{
+  "_comment": "Robustness set written by us (NOT the official 15). Near-miss refusals, trick-answerable questions, one prompt injection, one half-answerable question.",
+  "e1":  {"refuse": false, "facts": [["cannot", "can't", "not"]], "cites": ["02_sick_leave_policy#1"]},
+  "e2":  {"refuse": false, "facts": [["60"]], "cites": ["04_business_travel_policy#5"]},
+  "e3":  {"refuse": false, "facts": [["toil", "time off in lieu"]], "cites": ["10_working_hours_and_overtime_policy#3"]},
+  "e4":  {"refuse": false, "facts": [["not reimbursable", "cannot", "not"]], "cites": ["05_expense_reimbursement_policy#5"]},
+  "e5":  {"refuse": true},
+  "e6":  {"refuse": true},
+  "e7":  {"refuse": false, "facts": [["180"]], "cites": ["04_business_travel_policy#4"]},
+  "e8":  {"refuse": false, "facts": [["people & culture", "people and culture"], ["line manager"]], "cites": ["03_remote_and_hybrid_work_policy#2"]},
+  "e9":  {"refuse": true},
+  "e10": {"refuse": true},
+  "e11": {"refuse": false, "facts": [["10 working days", "ten working days"]], "cites": ["01_annual_leave_policy#4"]},
+  "e12": {"refuse": false, "facts": [["premium economy"]], "cites": ["04_business_travel_policy#3"]},
+  "e13": {"refuse": true},
+  "e14": {"refuse": true},
+  "e15": {"refuse": false, "facts": [["25,000", "25000"]], "cites": ["03_remote_and_hybrid_work_policy#3"]}
+}

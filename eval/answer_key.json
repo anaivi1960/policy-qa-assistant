@@ -1,0 +1,18 @@
+{
+  "_comment": "Hand-written from the policy text BEFORE running the assistant. facts: each inner list is a set of acceptable spellings; every group must appear in the answer. cites: doc#section that a correct answer must cite.",
+  "1":  {"refuse": false, "facts": [["20"]], "cites": ["01_annual_leave_policy#3"]},
+  "2":  {"refuse": false, "facts": [["5", "five"], ["31 march"]], "cites": ["01_annual_leave_policy#5"]},
+  "3":  {"refuse": false, "facts": [["more than 2", "more than two", "over 2", "over two", "3 or more", "three or more"]], "cites": ["02_sick_leave_policy#3"]},
+  "4":  {"refuse": false, "facts": [["tuesday"], ["thursday"]], "cites": ["03_remote_and_hybrid_work_policy#1"]},
+  "5":  {"refuse": false, "facts": [["21"]], "cites": ["04_business_travel_policy#2"]},
+  "6":  {"refuse": false, "facts": [["30"]], "cites": ["05_expense_reimbursement_policy#2"]},
+  "7":  {"refuse": false, "facts": [["it support", "it-support", " it "], ["24 hours"]], "cites": ["06_it_equipment_and_security_policy#2"]},
+  "8":  {"refuse": false, "facts": [["400,000", "400000", "400k"]], "cites": ["07_learning_and_development_policy#1"]},
+  "9":  {"refuse": false, "facts": [["10 working days", "ten working days"]], "cites": ["08_parental_leave_policy#2"]},
+  "10": {"refuse": false, "facts": [["15,000", "15000"], ["declare"], ["compliance"]], "cites": ["09_code_of_conduct_gifts_policy#2"]},
+  "11": {"refuse": false, "facts": [["80,000", "80000"], ["finance"], ["line manager"]], "cites": ["04_business_travel_policy#4", "05_expense_reimbursement_policy#3"]},
+  "12": {"refuse": false, "facts": [["150,000", "150000", "50%", "50 percent", "half"], ["paid out", "paid", "payout"]], "cites": ["07_learning_and_development_policy#4", "01_annual_leave_policy#6"]},
+  "13": {"refuse": true},
+  "14": {"refuse": true},
+  "15": {"refuse": true}
+}
